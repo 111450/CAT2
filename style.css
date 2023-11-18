@@ -1,8 +1,11 @@
-.authordetails {
-    display: flex;
-    justify-content: center;
+body{
+  background-color:lightblue;
   }
-  .body {
-    background-color: rgb(166, 168, 166);
-    margin: 0;
+  h1{
+  color:white;
+  text-align:center;
+  }
+  p{
+  font-family:verdara;
+  font-size:20px;
   }
