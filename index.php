@@ -1,36 +1,39 @@
+<?php
+// PHP code can go here if needed
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylee.css">
-    <title>Document</title>
+    <title>Author Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Link to the external CSS file -->
 </head>
-<div class="body">
 <body>
-    <div class="authordetails">
-    <form action="processes/autregistration.php" method="POST">
-        <h2>AUTHOR DETAILS<h2><br/>
-        Author ID <br/>
-        <input type="text"name="author_id" id="author_id"><br/><br/>
-        Author Full Name<br/>
-        <input type="text" name="fullname"id="fullname"><br/><br/>
-        Author Email<br/>
-        <input type="email" name="email" id="email"><br/><br/>
-        Author Address<br/>
-        <input type="text" name="address" id="address"><br/><br/>
-        Author Date of Birth<br/>
-        <input type="date" name="DOB" id="dob"><br/><br/>
-        Author Biography<br/>
-        <textarea placeholder="Write Biography here" name="biography" id="biography" rows="8"gti cols="80"></textarea><br/>
-        Author Suspended<br/>
-        YES
-        <input type="radio" name= "status" id="yes" value="status"> <br/>
-        NO
-        <input type="radio" name="status" id="no" value="status"><br/>
-        <input type="submit" name = "submit" value="submit"><br>
+    <form action="AuthorRegistration.php" method="post">
+        <!-- Input fields for author details -->
+        <label for="authorId">Author ID:</label>
+        <input type="text" id="authorId" name="authorId"><br><br>
+
+        <label for="authorFullName">Full Name:</label>
+        <input type="text" id="authorFullName" name="authorFullName"><br><br>
+
+        <label for="authorEmail">Email:</label>
+        <input type="email" id="authorEmail" name="authorEmail"><br><br>
+
+        <label for="authorAddress">Address:</label>
+        <input type="text" id="authorAddress" name="authorAddress"><br><br>
+
+        <label for="authorBiography">Biography:</label>
+        <textarea id="authorBiography" name="authorBiography"></textarea><br><br>
+
+        <label for="authorDOB">Date of Birth:</label>
+        <input type="date" id="authorDOB" name="authorDOB"><br><br>
+
+        <label for="authorSuspended">Suspended:</label>
+        <input type="checkbox" id="authorSuspended" name="authorSuspended"><br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
     </form>
-    </div>
-</div>
 </body>
 </html>
